@@ -101,10 +101,16 @@ npm run build  # tsc -> dist/
 npm run start  # node dist/server.js
 ```
 
-### 5. Seed Admin (if needed)
+### 5. Seed Admin **Securely**
 ```bash
+# 1. Copy .env.example → .env
+# 2. Edit ADMIN_* vars (generate strong pw!)
+# 3. Run (no pw exposure)
 npm run seed
 ```
+
+**Note**: Only runs if ADMIN_EMAIL not exists, updates otherwise. Logs safe.
+
 
 ## 📁 Project Structure
 ```
